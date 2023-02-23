@@ -53,14 +53,21 @@ There are 1535 rows in the dataset which indicates that the dataset documents 15
 
 | CAUSE.CATEGORY                |   RES.MONEY.LOST |   COM.MONEY.LOST |   IND.MONEY.LOST |
 |:------------------------------|-----------------:|-----------------:|-----------------:|
-| equipment failure             |         12.7361  |         11.8952  |          5.6062  |
-| fuel supply emergency         |        162.82    |        165.789   |         44.5407  |
-| intentional attack            |          2.74004 |          2.50216 |          1.15315 |
-| islanding                     |          2.68427 |          3.05349 |          1.06663 |
+| equipment failure             |         12.5011  |         11.5861  |          5.62598 |
+| fuel supply emergency         |        179.434   |        184.48    |         57.5365  |
+| intentional attack            |          2.86007 |          2.61357 |          1.22069 |
+| islanding                     |          2.60097 |          2.95016 |          1.03395 |
 | public appeal                 |         20.4576  |         16.5303  |          6.60629 |
-| severe weather                |         34.5171  |         29.1123  |         13.0284  |
-| system operability disruption |          7.42418 |          6.67347 |          3.30064 |
+| severe weather                |         34.252   |         28.9607  |         12.9862  |
+| system operability disruption |          7.41131 |          6.70593 |          3.28277 |
 
 ---
 
 ## Hypothesis Testing
+
+<iframe src="assets/hypothesis_testing.html.html" width=800 height=600 frameBorder=0></iframe>
+
+Summary:
+Unfortunately, the pivot table cannot tell a clear difference between the overall money lost in the commercial sector and the residential sector. Given that the average money lost is higher in residential sector under more categories of events, we decide to use permutation testing to further investigate whether the money lost in residential sector is larger than the money lost in commercial sector.
+The null hypothesis is that, the average money lost in the residential sector is equal to the average money lost in the commercial sector during power outages . The alternative hypothesis is that, the average money lost in the commercial sector is larger than the average money lost in the residential sector during power outages. For the test statistic, we use the difference of the mean of two samples.
+The p-value calculated using the simulation is 0.144. Under significance level of 0.05, we fail to reject null hypothesis. This result suggests that, although there are slight differences in the average money lost from residential sector and from commercial sectors under different categories of events that cause the power outage, we cannot say that the average money lost from two sectors are different.
