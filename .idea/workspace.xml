@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abbaeb0f-e4f4-4ed7-b2a9-695850f216d7" name="Changes" comment="Hypothesis Testing">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="abbaeb0f-e4f4-4ed7-b2a9-695850f216d7" name="Changes" comment="Everything" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -120,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677192309051</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Everything">
+      <created>1677194170835</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1677194170836</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -129,6 +133,7 @@
     <MESSAGE value="Table Change" />
     <MESSAGE value="Table Change and Significance" />
     <MESSAGE value="Hypothesis Testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hypothesis Testing" />
+    <MESSAGE value="Everything" />
+    <option name="LAST_COMMIT_MESSAGE" value="Everything" />
   </component>
 </project>
