@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abbaeb0f-e4f4-4ed7-b2a9-695850f216d7" name="Changes" comment="HTML">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="abbaeb0f-e4f4-4ed7-b2a9-695850f216d7" name="Changes" comment="Significance">
+      <change beforePath="$PROJECT_DIR$/template.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/template.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,11 +70,19 @@
       <option name="project" value="LOCAL" />
       <updated>1677134719768</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Significance">
+      <created>1677187959588</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1677187959588</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="HTML" />
-    <option name="LAST_COMMIT_MESSAGE" value="HTML" />
+    <MESSAGE value="Significance" />
+    <option name="LAST_COMMIT_MESSAGE" value="Significance" />
   </component>
 </project>

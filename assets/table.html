@@ -4,8 +4,10 @@
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
 .tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
 .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
 </style>
 <table class="tg">
 <thead>
@@ -16,14 +18,6 @@
 </thead>
 <tbody>
   <tr>
-    <td class="tg-c3ow">"YEAR"</td>
-    <td class="tg-0pky">The year when the outage occurred</td>
-  </tr>
-  <tr>
-    <td class="tg-c3ow">"MONTH"</td>
-    <td class="tg-0pky">The month when the outage occurred</td>
-  </tr>
-  <tr>
     <td class="tg-c3ow">"U.S._STATE"</td>
     <td class="tg-0pky">The state where the outage occured</td>
   </tr>
@@ -32,48 +26,44 @@
     <td class="tg-0pky">The postal code of the U.S State</td>
   </tr>
   <tr>
-    <td class="tg-c3ow">"NERC_REGION"</td>
-    <td class="tg-0pky">The North American Electric Reliability Corporation invovled in the outage</td>
-  </tr>
-  <tr>
-    <td class="tg-c3ow">"ANOMALY.LEVEL"</td>
-    <td class="tg-0pky">The oceanic El Nino/El Nina index (ONI) which refer to the cold and warm episodes by season</td>
-  </tr>
-  <tr>
-    <td class="tg-c3ow">"OUTAGE.START.DATE"</td>
-    <td class="tg-0pky">The date of when the outage started as reported by the related utility place</td>
-  </tr>
-  <tr>
-    <td class="tg-c3ow">"OUTAGE.START.TIME"</td>
-    <td class="tg-0pky">The time when the outage started as reported by the related utility place</td>
-  </tr>
-  <tr>
-    <td class="tg-c3ow">"OUTAGE.RESTORATION.DATE"</td>
-    <td class="tg-0pky">The date of when the outage was resolved as reported by the related utility place</td>
-  </tr>
-  <tr>
-    <td class="tg-c3ow">"OUTAGE.RESTORATION.TIME"</td>
-    <td class="tg-0pky">The time when the outage was resolved as reported by the related utility place</td>
-  </tr>
-  <tr>
-    <td class="tg-c3ow">"CAUSE.CATEGORY"</td>
-    <td class="tg-0pky">The general cause of an outage</td>
+    <td class="tg-baqh">"CAUSE.CATEGORY"</td>
+    <td class="tg-0lax">The general cause of an outage</td>
   </tr>
   <tr>
     <td class="tg-c3ow">"OUTAGE.DURATION"</td>
     <td class="tg-0pky">The duration of an outage in minutes</td>
   </tr>
   <tr>
-    <td class="tg-c3ow">"CUSTOMERS.AFFECTED"</td>
-    <td class="tg-0pky">The number of customers affected by an outage</td>
+    <td class="tg-c3ow">"RES.SALES"</td>
+    <td class="tg-0pky">In the residential sector, the electricity consumption in mega-watt hours</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">"COM.SALES"</td>
+    <td class="tg-0lax"><span style="font-weight:400;font-style:normal">In the commercial sector, the electricity consumption in mega-watt hours</span></td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">"IND.SALES"</td>
+    <td class="tg-0lax"><span style="font-weight:400;font-style:normal">In the industrial sector, the electricity consumption in mega-watt hours</span></td>
   </tr>
   <tr>
     <td class="tg-c3ow">"TOTAL.SALES"</td>
     <td class="tg-0pky">The total electricity consumption in a state in megawatt-hours</td>
   </tr>
   <tr>
-    <td class="tg-c3ow">"TOTAL.CUSTOMERS"</td>
-    <td class="tg-0pky">The annual number of total customers in a state</td>
+    <td class="tg-baqh">"RES.PRICE"</td>
+    <td class="tg-0lax">In the residential sector, the monthly electricity price in cents/kilowatt-hours</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">"COM.PRICE"</td>
+    <td class="tg-0lax"><span style="font-weight:400;font-style:normal">In the commercial sector, the monthly electricity price in cents/kilowatt-hours</span></td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">"IND.PRICE"</td>
+    <td class="tg-0lax"><span style="font-weight:400;font-style:normal">In the industrial sector, the monthly electricity price in cents/kilowatt-hours</span></td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">"TOTAL.PRICE"</td>
+    <td class="tg-0lax">The average monthly electricity price in the U.S. state </td>
   </tr>
 </tbody>
 </table>
