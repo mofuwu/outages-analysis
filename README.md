@@ -44,6 +44,7 @@ There are 1535 rows in the dataset which indicates that the dataset documents 15
 
 ---
 ### Univariate Analysis:
+<iframe src="assets/com_money_lost_hist.html" width=800 height=600 frameBorder=0></iframe>
 
 ---
 ### Bivariate Analysis:
