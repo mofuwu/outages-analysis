@@ -25,6 +25,10 @@ There are 1535 rows in the dataset which indicates that the dataset documents 15
 
 ### Missingness Dependency:
 
+<iframe src="assets/MAR_duration_category.html" width=800 height=600 frameBorder=0></iframe>
+
+<iframe src="assets/MAR_duration_state.html" width=800 height=600 frameBorder=0></iframe>
+
 ---
 
 ## Cleaning and EDA
@@ -33,11 +37,13 @@ There are 1535 rows in the dataset which indicates that the dataset documents 15
 
 ---
 ### Univariate Analysis:
+
+<iframe src="assets/res_money_lost_hist.html" width=800 height=600 frameBorder=0></iframe>
+
 <iframe src="assets/com_money_lost_hist.html" width=800 height=600 frameBorder=0></iframe>
 
 <iframe src="assets/ind_money_lost_hist.html" width=800 height=600 frameBorder=0></iframe>
 
-<iframe src="assets/res_money_lost_hist.html" width=800 height=600 frameBorder=0></iframe>
 
 ---
 ### Bivariate Analysis:
@@ -65,7 +71,7 @@ There are 1535 rows in the dataset which indicates that the dataset documents 15
 
 ## Hypothesis Testing
 
-<iframe src="assets/hypothesis_testing.html.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/hypothesis_testing.html" width=800 height=600 frameBorder=0></iframe>
 
 Summary:
 Unfortunately, the pivot table cannot tell a clear difference between the overall money lost in the commercial sector and the residential sector. Given that the average money lost is higher in residential sector under more categories of events, we decide to use permutation testing to further investigate whether the money lost in residential sector is larger than the money lost in commercial sector.
