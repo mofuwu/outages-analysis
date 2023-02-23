@@ -49,6 +49,8 @@ There are 1535 rows in the dataset which indicates that the dataset documents 15
 
 ### Pivot Table Analysis:
 
+
+
 | CAUSE.CATEGORY                |   RES.MONEY.LOST |   COM.MONEY.LOST |   IND.MONEY.LOST |
 |:------------------------------|-----------------:|-----------------:|-----------------:|
 | equipment failure             |         12.7361  |         11.8952  |          5.6062  |
@@ -58,6 +60,7 @@ There are 1535 rows in the dataset which indicates that the dataset documents 15
 | public appeal                 |         20.4576  |         16.5303  |          6.60629 |
 | severe weather                |         34.5171  |         29.1123  |         13.0284  |
 | system operability disruption |          7.42418 |          6.67347 |          3.30064 |
+
 ---
 
 ## Hypothesis Testing
