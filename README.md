@@ -6,8 +6,9 @@ by Sean Chan (swchan@ucsd.edu) and Junyi Xu (jux006@ucsd.edu)
 Question: What are the characteristics of power outages with higher severity?
 
 For our project, we were given a dataset of major outages in the United States between January 2000 and July 2016. Each row represents a single documented outage with their columns containing information on data such as but not limited to the year, month, state, and cause of the outage.
-There are 1535 rows in the dataset. The columns that we look at in our project are detailed in the table below.
+There are 1535 rows in the dataset which indicates that the dataset documents 1535 outage events. The columns that we look at in our project are detailed in the table below.
 
+---
 |      COLUMNS INCLUDED     | DESCRIPTION OF COLUMN                                                                       |
 |:-------------------------:|---------------------------------------------------------------------------------------------|
 |           "YEAR"          | The year when the outage occurred                                                           |
@@ -26,10 +27,33 @@ There are 1535 rows in the dataset. The columns that we look at in our project a
 |       "TOTAL.SALES"       | The total electricity consumption in a state in megawatt-hours                              |
 |     "TOTAL.CUSTOMERS"     | The annual number of total customers in a state                                             |
 ---
-
-
-
 ## Assessment of Missingness
+
+### NMAR Analysis:
+
+
+---
+
+### Missingness Dependency:
+
+---
+
+## Cleaning and EDA
+
+### Data Cleaning Steps:
+
+---
+### Univariate Analysis:
+
+---
+### Bivariate Analysis:
+
+---
+### Geospatial Analysis:
+
+---
+
+### Pivot Table Analysis:
 
 ---
 
