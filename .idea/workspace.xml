@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abbaeb0f-e4f4-4ed7-b2a9-695850f216d7" name="Changes" comment="Fixing Table3">
+    <list default="true" id="abbaeb0f-e4f4-4ed7-b2a9-695850f216d7" name="Changes" comment="Changes1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/template.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +16,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="40db5123-5a17-4866-8568-a522e875b173" />
+        <option name="url" value="https://github.com/mofuwu/outages-analysis.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -155,8 +169,26 @@
       <option name="project" value="LOCAL" />
       <updated>1677199104109</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Changes1">
+      <created>1677206978789</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1677206978789</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="HTML" />
@@ -168,6 +200,7 @@
     <MESSAGE value="Fixing Table" />
     <MESSAGE value="Fixing Table2" />
     <MESSAGE value="Fixing Table3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing Table3" />
+    <MESSAGE value="Changes1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes1" />
   </component>
 </project>

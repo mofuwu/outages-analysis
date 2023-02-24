@@ -20,6 +20,7 @@ There are 1535 rows in the dataset which indicates that the dataset documents 15
 
 ### NMAR Analysis:
 
+The column `CUSTOMERS.AFFECTED` may be NMAR. The electricity provider may choose not to report the number of customers affected if there are too few people influenced by the power outage. Additional data about the range of area under the influence of the power outage may be useful to explain the missingness of the number of customers affected. 
 
 ---
 
@@ -27,25 +28,24 @@ There are 1535 rows in the dataset which indicates that the dataset documents 15
 
 <iframe src="assets/MAR_duration_state.html" width=800 height=600 frameBorder=0></iframe>
 
-The permutation test above checks the missingness dependency of power outage duration on the US states. A p-value of 0.264 indicats that the missingness of power outage duration is independent of US states.
+The permutation test above checks the missingness dependency of power outage duration on the US states. A p-value of 0.252 indicats that the missingness of power outage duration is independent of the US states.
 
 <iframe src="assets/MAR_duration_category.html" width=800 height=600 frameBorder=0></iframe>
 
-The permutation test above checks the missingness dependency of power outage duration on the category of the cause. A p-value of 0.003 confirms this dependency.
-
-To perform imputation on columns that assossiate with electricity consumptions and columns that assossiate with electricity price, we conduct the same permutation testing one each column and got all p-values greater than 0.05. The results demonstrate the validity of using probabilistic imputation conditioned on the categories of the events that cause the power outages.
+The permutation test above checks the missingness dependency of power outage duration on the category of events that cause the power outage. A p-value of 0.002 confirms this dependency.
 
 ---
 
 ## Cleaning and EDA
 
-|    | U.S._STATE   | POSTAL.CODE   | CAUSE.CATEGORY     |   OUTAGE.DURATION |   RES.PRICE |   COM.PRICE |   IND.PRICE |   TOTAL.PRICE |   RES.SALES |   COM.SALES |   IND.SALES |   TOTAL.SALES |   RES.MONEY.LOST |   COM.MONEY.LOST |   IND.MONEY.LOST |   TOTAL.MONEY.LOST |
-|---:|:-------------|:--------------|:-------------------|------------------:|------------:|------------:|------------:|--------------:|------------:|------------:|------------:|--------------:|-----------------:|-----------------:|-----------------:|-------------------:|
-|  1 | Minnesota    | MN            | severe weather     |              3060 |       11.6  |        9.18 |        6.81 |          9.28 | 2.33292e+06 | 2.11477e+06 | 2.11329e+06 |   6.56252e+06 |      13.8015     |       9.90095    |       7.33967    |        1863.55     |
-|  2 | Minnesota    | MN            | intentional attack |                 1 |       12.12 |        9.71 |        6.49 |          9.28 | 1.58699e+06 | 1.80776e+06 | 1.88793e+06 |   5.28423e+06 |       0.00320571 |       0.00292555 |       0.00204211 |           0.490377 |
-|  3 | Minnesota    | MN            | severe weather     |              3000 |       10.87 |        8.19 |        6.07 |          8.15 | 1.46729e+06 | 1.80168e+06 | 1.9513e+06  |   5.22212e+06 |       7.97474    |       7.37789    |       5.92218    |        1276.81     |
-|  4 | Minnesota    | MN            | severe weather     |              2550 |       11.79 |        9.25 |        6.71 |          9.19 | 1.85152e+06 | 1.94117e+06 | 1.99303e+06 |   5.78706e+06 |       9.2775     |       7.63124    |       5.68361    |        1356.17     |
-|  5 | Minnesota    | MN            | severe weather     |              1740 |       13.07 |       10.16 |        7.74 |         10.43 | 2.02888e+06 | 2.16161e+06 | 1.77794e+06 |   5.97034e+06 |       7.69004    |       6.36897    |       3.99076    |        1083.51     |
+|    | U.S._STATE   | POSTAL.CODE   | CAUSE.CATEGORY   |   OUTAGE.DURATION |   DEMAND.LOSS.MW |   CUSTOMERS.AFFECTED |   RES.PRICE |   COM.PRICE |   IND.PRICE |   RES.PERCEN |   COM.PERCEN |   IND.PERCEN |   RES.MONEY.LOST |   COM.MONEY.LOST |   IND.MONEY.LOST |   TOTAL.MONEY.LOST |
+|---:|:-------------|:--------------|:-----------------|------------------:|-----------------:|---------------------:|------------:|------------:|------------:|-------------:|-------------:|-------------:|-----------------:|-----------------:|-----------------:|-------------------:|
+|  1 | Minnesota    | MN            | severe weather   |              3060 |          680.167 |                70000 |       11.6  |        9.18 |        6.81 |      35.5491 |      32.225  |      32.2024 |         14304.5  |         10261.8  |          7607.14 |            32173.4 |
+|  3 | Minnesota    | MN            | severe weather   |              3000 |          680.167 |                70000 |       10.87 |        8.19 |        6.07 |      28.0977 |      34.501  |      37.366  |         10386.9  |          9609.51 |          7713.49 |            27709.9 |
+|  4 | Minnesota    | MN            | severe weather   |              2550 |          680.167 |                68200 |       11.79 |        9.25 |        6.71 |      31.9941 |      33.5433 |      34.4393 |         10904.1  |          8969.17 |          6680.08 |            26553.3 |
+|  5 | Minnesota    | MN            | severe weather   |              1740 |          250     |               250000 |       13.07 |       10.16 |        7.74 |      33.9826 |      36.2059 |      29.7795 |          3220.1  |          2666.92 |          1671.08 |             7558.1 |
+|  6 | Minnesota    | MN            | severe weather   |              1860 |          680.167 |                60000 |       10.63 |        8.34 |        6.15 |      31.1928 |      33.2358 |      35.5382 |          6991.41 |          5844.54 |          4608.37 |            17444.3 |
+
 
 ### Data Cleaning Steps:
 
@@ -73,15 +73,15 @@ We adopt the money lost during each power outage event as the main measurement o
 
 <iframe src="assets/res_money_lost_hist.html" width=800 height=600 frameBorder=0></iframe>
 
-The histogram shows the distribution of the total money lost in residential sector during each power outage. A significantly right-skewed plot indicates that most of the power outage cause relatively small amount of money lost. The largest number of power outages falls into the range that less than 10 billion dollars are lost. Cases where more than 500 billion dollars are lost are approximately equally rare.
+The histogram shows the distribution of the total money lost in residential sector during each power outage. More than half of the power outage events lead to money lost less than 10000 dollars. More than 25% of cases cause money lost between 10000 dollars and 30000 dollars. Only about 10% of the cases lead to more than 300000 dollars. The highest money lost in residential sector is about 2 million dollars.
 
 <iframe src="assets/com_money_lost_hist.html" width=800 height=600 frameBorder=0></iframe>
 
-The histogram shows the distribution of the total money lost in commercial sector during each power outage. Similar to the distribution for residencial sector, most of the money lost are below 15 billion dollars. However, there are more extreme cases relating to commercial sector. Several cases results in more than 1 trillion dollars of money lost.
+The histogram shows the distribution of the total money lost in commercial sector during each power outage. Similar to the distribution for residential sector, over 60% of the power outage events lead to money lost less than 10000 dollars. About 25% of cases, the money lost is between 10000 dollars and 30000 dollars. Only about 10% of the cases lead to more than 300000 dollars. The highest money lost in commercial sector is about 1.5 million dollars, slightly smaller than the highest money lost in residencial sector.
 
 <iframe src="assets/ind_money_lost_hist.html" width=800 height=600 frameBorder=0></iframe>
 
-The histogram shows the distribution of the total money lost in industrial sector during each power outage. It bears the same shape as the distribution related to other sectors, and most of the power outage cases have money lost within 15 billion dollars. However, the money lost in industrial sector has a noticeably smaller range. The highest money lost is only around 200 billion dollars.
+The histogram shows the distribution of the total money lost in industrial sector during each power outage. The shape of the distribution is similar to the other two sectors, but the money lost is in general significantly smaller. About 50% of the power outage events lead to money lost less than 2500 dollars. About 25% of cases, the money lost is between 2500 dollars and 7500 dollars. The rest 25% of the cases lead to more than 7500 dollars. The highest money lost in industrial sector is about 935000 dollars. 
 
 ---
 ### Bivariate Analysis:
@@ -91,7 +91,7 @@ The barchart shows that there are remarkable differences between the average mon
 
 <iframe src="assets/total_money_lost_vs_cause_category.html" width=800 height=600 frameBorder=0></iframe>
 
-Besides the categories of events that cause the power outage, we also look into the geographical factors. The choropleth graph depicts the average money lost due to power outage in each US state. Over the different states, we can observe some variations in the average money lost. The financial lost on average is the highest in New York, the financial center of US. Texas has the second highest money lost on average, possibly due to its large number of residents as well as industries.
+Besides the categories of events that cause the power outage, we also look into the geographical factors. The choropleth graph depicts the total money lost due to power outage in each US state. Over the different states, we can observe some variations in the average money lost. The total financial lost is significantly higher in New York and North Dakota. Texas and Florida also have relatively high money lost. Many areas on the west coast show greater money lost than east coast and the middle states. In general, there are some variations in the money lost across different states, so US states may be another factor that influence the severity of financial lost.
 
 ---
 
@@ -126,8 +126,8 @@ Alternate Hypothesis H1: RES.MONEY.LOST > COM.MONEY.LOST
 
 The graph above shows the distribution of our permutation test between residential money loss and commercial money loss.
 
-Unfortunately, the pivot table cannot tell a clear difference between the overall money lost in the commercial sector and the residential sector. Given that the average money lost is higher in residential sector under more categories of events, we decide to use permutation testing to further investigate whether the money lost in residential sector is larger than the money lost in commercial sector. This test is appropriate because we want to compare two sectors: residential and commercial.
+Unfortunately, the pivot table cannot tell a clear difference between the overall money lost in the commercial sector and the residential sector. Given that the average money lost is higher in residential sector under more categories of events, we decide to use permutation testing to further investigate whether the money lost in residential sector is larger than the money lost in commercial sector. 
 
-The null hypothesis is that, the average money lost in the residential sector is equal to the average money lost in the commercial sector during power outages . The alternative hypothesis is that, the average money lost in the residential sector is larger than the average money lost in the commercial sector during power outages. For the test statistic, we use the difference of the mean of two samples. The difference of means is an appropriate test statistic because we want to see if there is a positive difference between the residential and commercial sector.
+The null hypothesis is that, the average money lost in the residential sector is equal to the average money lost in the commercial sector during power outages . The alternative hypothesis is that, the average money lost in the residential sector is larger than the average money lost in the commercial sector during power outages. For the test statistic, we use the difference of the mean of two samples.
 
-The p-value calculated using the simulation is 0.144. Under significance level of 0.05, we fail to reject null hypothesis. This result suggests that, although there are slight differences in the average money lost from residential sector and from commercial sectors under different categories of events that cause the power outage, we cannot say that the average money lost from two sectors are different.
+The p-value calculated using the simulation is 0.367. Under significance level of 0.05, we fail to reject null hypothesis. This result suggests that, although there are slight differences in the average money lost from residential sector and from commercial sectors under different categories of events that cause the power outage, we cannot say that the average money lost from two sectors are different.
