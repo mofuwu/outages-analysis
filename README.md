@@ -107,6 +107,8 @@ Besides the categories of events that cause the power outage, we also look into 
 | severe weather                |         34.252   |         28.9607  |         12.9862  |
 | system operability disruption |          7.41131 |          6.70593 |          3.28277 |
 
+The pivot table shows how much money is lost from the residential, commercial, and industrial sector from different outage causes.
+
 Given that the distributions of money lost in residential, commercial, and industrial sector are very similar, it is hard to tell whether the money lost in one sector is different from the other. In respond to this, we plot a pivot table to investigate the difference between money lost of three sectors under different categories of events that cause the power outage. This can also help us explore the pattern of money lost due to different categories of events for each sector respectively.
 
 In this pivot table, we observe that the average money lost from industrial sector is significantly smaller under all categories of events than from the other two sectors, which is consistent with the conclusion we draw in the univariate analysis. The average money lost in residential and commercial sectors are very close. There is a slightly higher average money lost in residential sector due to equipment failure, intentional attack, public appeal, severe whether, and system operability disruption. The rest categories of events results in slightly higher average money lost in commercial sector.
@@ -122,9 +124,10 @@ Alternate Hypothesis H1: RES.MONEY.LOST > COM.MONEY.LOST
 
 <iframe src="assets/hypothesis_testing.html" width=800 height=600 frameBorder=0></iframe>
 
-Summary:
-Unfortunately, the pivot table cannot tell a clear difference between the overall money lost in the commercial sector and the residential sector. Given that the average money lost is higher in residential sector under more categories of events, we decide to use permutation testing to further investigate whether the money lost in residential sector is larger than the money lost in commercial sector.
+The graph above shows the distribution of our permutation test between residential money loss and commercial money loss.
 
-The null hypothesis is that, the average money lost in the residential sector is equal to the average money lost in the commercial sector during power outages . The alternative hypothesis is that, the average money lost in the residential sector is larger than the average money lost in the commercial sector during power outages. For the test statistic, we use the difference of the mean of two samples.
+Unfortunately, the pivot table cannot tell a clear difference between the overall money lost in the commercial sector and the residential sector. Given that the average money lost is higher in residential sector under more categories of events, we decide to use permutation testing to further investigate whether the money lost in residential sector is larger than the money lost in commercial sector. This test is appropriate because we want to compare two sectors: residential and commercial.
+
+The null hypothesis is that, the average money lost in the residential sector is equal to the average money lost in the commercial sector during power outages . The alternative hypothesis is that, the average money lost in the residential sector is larger than the average money lost in the commercial sector during power outages. For the test statistic, we use the difference of the mean of two samples. The difference of means is an appropriate test statistic because we want to see if there is a positive difference between the residential and commercial sector.
 
 The p-value calculated using the simulation is 0.144. Under significance level of 0.05, we fail to reject null hypothesis. This result suggests that, although there are slight differences in the average money lost from residential sector and from commercial sectors under different categories of events that cause the power outage, we cannot say that the average money lost from two sectors are different.
