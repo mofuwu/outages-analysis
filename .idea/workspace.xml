@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abbaeb0f-e4f4-4ed7-b2a9-695850f216d7" name="Changes" comment="Final3">
+    <list default="true" id="abbaeb0f-e4f4-4ed7-b2a9-695850f216d7" name="Changes" comment="Files">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/template.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/template.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -195,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677216843395</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Files">
+      <created>1677217221462</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1677217221462</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -223,6 +232,7 @@
     <MESSAGE value="Final1" />
     <MESSAGE value="Final2" />
     <MESSAGE value="Final3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final3" />
+    <MESSAGE value="Files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Files" />
   </component>
 </project>

@@ -38,13 +38,9 @@ The permutation test above checks the missingness dependency of power outage dur
 
 ## Cleaning and EDA
 
-|    | U.S._STATE   | POSTAL.CODE   | CAUSE.CATEGORY   |   OUTAGE.DURATION |   DEMAND.LOSS.MW |   CUSTOMERS.AFFECTED |   RES.PRICE |   COM.PRICE |   IND.PRICE |   RES.PERCEN |   COM.PERCEN |   IND.PERCEN |   RES.MONEY.LOST |   COM.MONEY.LOST |   IND.MONEY.LOST |   TOTAL.MONEY.LOST |
-|---:|:-------------|:--------------|:-----------------|------------------:|-----------------:|---------------------:|------------:|------------:|------------:|-------------:|-------------:|-------------:|-----------------:|-----------------:|-----------------:|-------------------:|
-|  1 | Minnesota    | MN            | severe weather   |              3060 |          680.167 |                70000 |       11.6  |        9.18 |        6.81 |      35.5491 |      32.225  |      32.2024 |         14304.5  |         10261.8  |          7607.14 |            32173.4 |
-|  3 | Minnesota    | MN            | severe weather   |              3000 |          680.167 |                70000 |       10.87 |        8.19 |        6.07 |      28.0977 |      34.501  |      37.366  |         10386.9  |          9609.51 |          7713.49 |            27709.9 |
-|  4 | Minnesota    | MN            | severe weather   |              2550 |          680.167 |                68200 |       11.79 |        9.25 |        6.71 |      31.9941 |      33.5433 |      34.4393 |         10904.1  |          8969.17 |          6680.08 |            26553.3 |
-|  5 | Minnesota    | MN            | severe weather   |              1740 |          250     |               250000 |       13.07 |       10.16 |        7.74 |      33.9826 |      36.2059 |      29.7795 |          3220.1  |          2666.92 |          1671.08 |             7558.1 |
-|  6 | Minnesota    | MN            | severe weather   |              1860 |          680.167 |                60000 |       10.63 |        8.34 |        6.15 |      31.1928 |      33.2358 |      35.5382 |          6991.41 |          5844.54 |          4608.37 |            17444.3 |
+Head of Cleaned Data:
+
+<iframe src="assets/cleaned_table.html" width=800 height=600 frameBorder=0></iframe>
 
 
 ### Data Cleaning Steps:
