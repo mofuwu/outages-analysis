@@ -99,13 +99,13 @@ Besides the categories of events that cause the power outage, we also look into 
 
 | CAUSE.CATEGORY                |   RES.MONEY.LOST |   COM.MONEY.LOST |   IND.MONEY.LOST |
 |:------------------------------|-----------------:|-----------------:|-----------------:|
-| equipment failure             |         12.5011  |         11.5861  |          5.62598 |
-| fuel supply emergency         |        179.434   |        184.48    |         57.5365  |
-| intentional attack            |          2.86007 |          2.61357 |          1.22069 |
-| islanding                     |          2.60097 |          2.95016 |          1.03395 |
-| public appeal                 |         20.4576  |         16.5303  |          6.60629 |
-| severe weather                |         34.252   |         28.9607  |         12.9862  |
-| system operability disruption |          7.41131 |          6.70593 |          3.28277 |
+| equipment failure             |          8238.73 |          7363.88 |          3958.64 |
+| fuel supply emergency         |         81473.2  |         93256.9  |         12059.6  |
+| intentional attack            |          5803.57 |          4270.43 |          1242.39 |
+| islanding                     |         78455.6  |         80738.6  |         28786.4  |
+| public appeal                 |         25613.4  |         28884.1  |         11478.6  |
+| severe weather                |         19796.2  |         17231.3  |          7812.71 |
+| system operability disruption |         24304.4  |         29013.8  |          7424.34 |
 
 The pivot table shows how much money is lost from the residential, commercial, and industrial sector from different outage causes.
 
