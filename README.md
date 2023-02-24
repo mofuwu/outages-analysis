@@ -42,7 +42,6 @@ Head of Cleaned Data:
 
 <iframe src="assets/cleaned_table.html" width=800 height=600 frameBorder=0></iframe>
 
-
 ### Data Cleaning Steps:
 
 Based on the result of the missingness dependencies, we perform within-group mean impuatation on the duration of the power outage to account for its dependency on the categories of the event that cause the power outage.
