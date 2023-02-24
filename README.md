@@ -28,7 +28,7 @@ The column `CUSTOMERS.AFFECTED` may be NMAR. The electricity provider may choose
 
 <iframe src="assets/MAR_duration_state.html" width=800 height=600 frameBorder=0></iframe>
 
-The permutation test above checks the missingness dependency of power outage duration on the US states. A p-value of 0.245 indicats that the missingness of power outage duration is independent of the US states.
+The permutation test above checks the missingness dependency of power outage duration on the US states. A p-value of 0.261 indicats that the missingness of power outage duration is independent of the US states.
 
 <iframe src="assets/MAR_duration_category.html" width=800 height=600 frameBorder=0></iframe>
 
@@ -127,4 +127,4 @@ Unfortunately, the pivot table cannot tell a clear difference between the overal
 
 The null hypothesis is that, the average money lost in the residential sector is equal to the average money lost in the commercial sector during power outages. The alternative hypothesis is that, the average money lost in the residential sector is different from the average money lost in the commercial sector during power outages. For the test statistic, we use the absolute difference of the mean of two samples.
 
-The p-value calculated using the simulation is 0.73. Under significance level of 0.05, we fail to reject null hypothesis. This result suggests that, although there are slight differences in the average money lost from residential sector and from commercial sectors under different categories of events that cause the power outage, we cannot say that the average money lost from two sectors are different.
+The p-value calculated using the simulation is 0.747. Under significance level of 0.05, we fail to reject null hypothesis. This result suggests that, although there are slight differences in the average money lost from residential sector and from commercial sectors under different categories of events that cause the power outage, we cannot say that the average money lost from two sectors are different.
